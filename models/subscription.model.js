@@ -58,9 +58,9 @@ const subscriptionSchema = new mongoose({
       ref: 'user',
       required: true,
       index: true
-   },
-   Timestamps: true
-})
+   }
+}, {timestamps: true}  
+)
 
 // Auto-calculate renewal date if missing 
 
