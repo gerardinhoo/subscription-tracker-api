@@ -1,16 +1,22 @@
-Backend Project - Subscription Management System API
+<div align="center">
+  <h3 align="center"> Subscription Tracker | A Subscription Management System API</h3>
+</div>
 
-Authenticate users using JWTs, connect a database, create models and schemas, and integrate it with ORMs. Structure the architecture of your API to ensure scalability and seamless communication with the frontend.
+## <a name="introduction">🤖 Introduction</a>
 
-Tech Stack:
+A **Subscription Management System API** that handles **users and business logic**.
+
+Subscription Tracker is a Backend Project built with Node JS, Express and Mongo that authenticates users using JWTs, connects to a database, creates models and schemas.
+
+## <a name="tech-stack">⚙️ Tech Stack</a>
 
 - Node.js
 - Express.js
 - MongoDB
 
-Features:
+## <a name="features">🔋 Features</a>
 
-- Advanced Rate Limiting and Bot Protection: with Arcjet that helps you secure the whole app.
+👉 **Advanced Rate Limiting and Bot Protection**: with Arcjet that helps you secure the whole app.
 
 👉 **Database Modeling**: Models and relationships using MongoDB & Mongoose.
 
@@ -22,51 +28,92 @@ Features:
 
 👉 **Email Reminders**: Automating smart email reminders with workflows using Upstash.
 
-How To run the app locally:
+and many more, including code architecture and reusability
 
-Cloning The App:
+## <a name="quick-start">🤸 Quick Start</a>
 
-- git clone https://github.com/gerardinhoo/subscription-tracker-api.git
-- cd to subscription-tracker-api
+Follow these steps to set up the project locally on your machine.
 
-Installation
+**Prerequisites**
 
-- npm install
+Make sure you have the following installed on your machine:
 
-Set Up Environment Variables
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
 
+**Cloning the Repository**
+
+```bash
+git clone https://github.com/adrianhajdin/subscription-tracker-api.git
+cd subscription-tracker-api
+```
+
+**Installation**
+
+Install the project dependencies using npm:
+
+```bash
+npm install
+```
+
+**Set Up Environment Variables**
+
+Create a new file named `.env.local` in the root of your project and add the following content:
+
+```env
 # PORT
-
 PORT=5500
 SERVER_URL="http://localhost:5500"
 
-#### ENVIRONMENT
-
+# ENVIRONMENT
 NODE_ENV=development
 
-#### DATABASE
-
+# DATABASE
 DB_URI=
 
-#### JWT AUTH
-
+# JWT AUTH
 JWT_SECRET=
 JWT_EXPIRES_IN="1d"
 
-#### ARCJET
-
+# ARCJET
 ARCJET_KEY=
 ARCJET_ENV="development"
 
-#### UPSTASH
-
+# UPSTASH
 QSTASH_URL=http://127.0.0.1:8080
 QSTASH_TOKEN=
 
-#### NODEMAILER
-
+# NODEMAILER
 EMAIL_PASSWORD=
+```
 
-Running the App
+**Running the Project**
 
-- npm run dev
+```bash
+npm run dev
+```
+
+Open [http://localhost:5500](http://localhost:5500) in your browser or any HTTP client to test the project.
+
+<details>
+<summary><code>Dummy JSON Data for testing in Postman</code></summary>
+
+```json
+{
+  "name": "World Cup 2026 Tickets At Mercedez Benz Stadium ",
+  "price": 509.0,
+  "currency": "USD",
+  "frequency": "weekly",
+  "category": "Entertainment",
+  "startDate": "2025-01-20T00:00:00.000Z",
+  "paymentMethod": "Credit Card"
+}
+```
+
+</details>
+
+## <a name="links">🔗 Links</a>
+
+- **Arcjet** - [https://arcjet.com/](https://arcjet.com/)
+- **Upstash** - [https://upstash.com/docs/introduction](https://upstash.com/docs/introduction)
