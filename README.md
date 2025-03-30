@@ -1,39 +1,63 @@
-Backend Project - Subscription Management System API 
+<div align="center">
+  <h3 align="center">Subscription Tracker | A Subscription Management System API</h3>
+</div>
 
+## <a name="introduction">🤖 Introduction</a>
 
-Authenticate users using JWTs, connect a database, create models and schemas, and integrate it with ORMs. Structure the architecture of your API to ensure scalability and seamless communication with the frontend.
+The Subscription Tracker is a backend project that handles users and business logic.
 
-Tech Stack:
- - Node.js
- - Express.js
- -  MongoDB
+## <a name="tech-stack">⚙️ Tech Stack</a>
 
-Features:
+- Node.js
+- Express.js
+- MongoDB
 
- - Advanced Rate Limiting and Bot Protection: with Arcjet that helps you secure the whole app.
+## <a name="features">🔋 Features</a>
 
- - Database Modeling: Models and relationships using MongoDB & Mongoose.
+👉 **Advanced Rate Limiting and Bot Protection**: with Arcjet that helps you secure the whole app.
 
- - JWT Authentication: User CRUD operations and subscription management.
+👉 **Database Modeling**: Models and relationships using MongoDB & Mongoose.
 
- - Global Error Handling: Input validation and middleware integration.
+👉 **JWT Authentication**: User CRUD operations and subscription management.
 
- - Logging Mechanisms: For better debugging and monitoring.
+👉 **Global Error Handling**: Input validation and middleware integration.
 
- - Email Reminders: Automating smart email reminders with workflows using Upstash.
+👉 **Logging Mechanisms**: For better debugging and monitoring.
 
+👉 **Email Reminders**: Automating smart email reminders with workflows using Upstash.
 
-How To run the app locally:
+## <a name="quick-start">🤸 Quick Start</a>
 
-Cloning The App: 
- - git clone https://github.com/gerardinhoo/subscription-tracker-api.git
- - cd to subscription-tracker-api
+Follow these steps to set up the project locally on your machine.
 
-Installation
- - npm install 
+**Prerequisites**
 
-Set Up Environment Variables 
+Make sure you have the following installed on your machine:
 
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+
+**Cloning the Repository**
+
+```bash
+git clone https://github.com/gerardinhoo/subscription-tracker-api.git
+cd subscription-tracker-api
+```
+
+**Installation**
+
+Install the project dependencies using npm:
+
+```bash
+npm install
+```
+
+**Set Up Environment Variables**
+
+Create a new file named `.env.local` in the root of your project and add the following content:
+
+```env
 # PORT
 PORT=5500
 SERVER_URL="http://localhost:5500"
@@ -58,13 +82,36 @@ QSTASH_TOKEN=
 
 # NODEMAILER
 EMAIL_PASSWORD=
+```
 
-Running the App
-  - npm run dev
+**Running the Project**
 
+```bash
+npm run dev
+```
 
+Open [http://localhost:5500](http://localhost:5500) in your browser or any HTTP client to test the project.
 
+## <a name="snippets">🕸️ Snippets</a>
 
+<details>
+<summary><code>Dummy JSON Data</code></summary>
 
+```json
+{
+  "name": "World Cup 2026 Tickets",
+  "price": 150.0,
+  "currency": "USD",
+  "frequency": "weekly",
+  "category": "Entertainment",
+  "startDate": "2025-01-20T00:00:00.000Z",
+  "paymentMethod": "Credit Card"
+}
+```
 
+</details>
 
+## <a name="links">🔗 Links</a>
+
+- [Arcjet](https://arcjet.com/)
+- [Upstach](https://upstash.com/docs/qstash/overall/getstarted)
